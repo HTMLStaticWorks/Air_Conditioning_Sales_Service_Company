@@ -1,0 +1,114 @@
+/* ==========================================================================
+   Dark Mode Overrides - "A PREMIUM SMART-HOME COMFORT SYSTEM"
+   ========================================================================== */
+
+[data-theme="dark"] {
+  /* Color System Overrides */
+  --bg-light: #0C2028; /* Dark Background */
+  --bg-warm: #102630; /* Slightly lighter dark for contrast */
+  --bg-card: #142C35; /* Card Background */
+  --bg-dark: #071318;
+  
+  --text-main: #F3F7F8;
+  --text-secondary: #9AA8AD;
+  --border-color: rgba(255, 255, 255, 0.10);
+  
+  --primary: #5CB6C9; /* Lighter teal for dark mode contrast */
+  --primary-deep: #7AD1E3;
+  --secondary: #5CB6C9;
+  --accent: #5CB6C9;
+  
+  /* Shadow adjustments for dark mode */
+  --shadow-sm: 0 4px 12px rgba(0, 0, 0, 0.2);
+  --shadow-md: 0 8px 24px rgba(0, 0, 0, 0.3);
+  --shadow-lg: 0 16px 48px rgba(0, 0, 0, 0.4);
+}
+
+/* Force Bootstrap Background and Text colors */
+[data-theme="dark"] .bg-light {
+  background-color: var(--bg-light) !important;
+}
+[data-theme="dark"] .bg-white {
+  background-color: var(--bg-card) !important;
+}
+[data-theme="dark"] .bg-dark {
+  background-color: var(--bg-dark) !important;
+}
+[data-theme="dark"] body {
+  background-color: var(--bg-light) !important;
+  color: var(--text-main) !important;
+}
+[data-theme="dark"] .text-muted {
+  color: var(--text-secondary) !important;
+}
+[data-theme="dark"] .text-dark {
+  color: var(--text-main) !important;
+}
+[data-theme="dark"] h1, [data-theme="dark"] h2, [data-theme="dark"] h3, [data-theme="dark"] h4, [data-theme="dark"] h5, [data-theme="dark"] h6 {
+  color: var(--text-main) !important;
+}
+
+/* Navbar Dark Mode */
+[data-theme="dark"] .navbar-floating {
+  background: rgba(20, 44, 53, 0.95);
+  border-color: rgba(255, 255, 255, 0.05);
+}
+[data-theme="dark"] .navbar-brand { color: var(--primary) !important; }
+[data-theme="dark"] .nav-link {
+  color: var(--text-main) !important;
+}
+[data-theme="dark"] .nav-link:hover, 
+[data-theme="dark"] .nav-link.active {
+  background-color: rgba(92, 182, 201, 0.15);
+  color: var(--primary) !important;
+}
+
+/* Button Dark Mode Overrides if needed */
+[data-theme="dark"] .btn-primary {
+  color: #0C2028 !important; /* Dark text on light primary */
+}
+[data-theme="dark"] .btn-primary:hover {
+  background-color: var(--primary-deep) !important;
+  color: #0C2028 !important;
+}
+[data-theme="dark"] .btn-outline {
+  color: var(--primary) !important;
+  border-color: var(--primary) !important;
+}
+[data-theme="dark"] .btn-outline:hover {
+  background-color: var(--primary) !important;
+  color: #0C2028 !important;
+}
+
+/* Specific component tweaks */
+[data-theme="dark"] .premium-card {
+  border-color: var(--border-color);
+  background-color: var(--bg-card) !important;
+}
+[data-theme="dark"] .premium-card:hover {
+  border-color: rgba(92, 182, 201, 0.4);
+}
+
+/* Form inputs in dark mode */
+[data-theme="dark"] .form-control,
+[data-theme="dark"] .form-select {
+  background-color: #1A3540;
+  border-color: var(--border-color);
+  color: var(--text-main);
+}
+[data-theme="dark"] .form-control:focus,
+[data-theme="dark"] .form-select:focus {
+  background-color: #1E3D4A;
+  border-color: var(--primary);
+  color: var(--text-main);
+  box-shadow: 0 0 0 0.25rem rgba(92, 182, 201, 0.25);
+}
+
+/* Toggle Buttons */
+[data-theme="dark"] .btn-outline-secondary {
+    color: var(--text-main) !important;
+    border-color: var(--border-color) !important;
+}
+[data-theme="dark"] .btn-outline-secondary:hover {
+    background-color: rgba(255, 255, 255, 0.1) !important;
+}
