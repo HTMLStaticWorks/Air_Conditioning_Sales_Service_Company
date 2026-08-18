@@ -46,20 +46,24 @@ document.addEventListener('DOMContentLoaded', () => {
   if (navbar) {
     window.addEventListener('scroll', () => {
       if (window.scrollY > 50) {
-        navbar.classList.add('shadow-md');
-        navbar.style.background = document.documentElement.getAttribute('data-theme') === 'dark' ?
-          'rgba(20, 44, 53, 0.98)' : 'rgba(255, 255, 255, 0.98)';
+        navbar.classList.add('scrolled');
       } else {
-        navbar.classList.remove('shadow-md');
-        navbar.style.background = document.documentElement.getAttribute('data-theme') === 'dark' ?
-          'rgba(20, 44, 53, 0.95)' : 'rgba(255, 255, 255, 0.95)';
+        navbar.classList.remove('scrolled');
       }
     });
   }
 
   // --- Mobile Menu ---
-  // Note: Bootstrap handles the collapse natively via data-bs-toggle="collapse", 
-  // so no manual JS class toggling is needed here as it creates bugs.
+  // Prevent scrolling when mobile menu is open
+  const navbarCollapseElement = document.getElementById('navbarNav');
+  if (navbarCollapseElement) {
+    navbarCollapseElement.addEventListener('show.bs.collapse', () => {
+      document.body.style.overflow = 'hidden';
+    });
+    navbarCollapseElement.addEventListener('hidden.bs.collapse', () => {
+      document.body.style.overflow = '';
+    });
+  }
 
   // --- Scroll to Top Logic ---
   const scrollTopBtn = document.getElementById("scrollTopBtn");

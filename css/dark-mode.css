@@ -4,20 +4,24 @@
 
 [data-theme="dark"] {
   /* Color System Overrides */
-  --bg-light: #0C2028; /* Dark Background */
-  --bg-warm: #102630; /* Slightly lighter dark for contrast */
-  --bg-card: #142C35; /* Card Background */
+  --bg-light: #0C2028;
+  /* Dark Background */
+  --bg-warm: #102630;
+  /* Slightly lighter dark for contrast */
+  --bg-card: #142C35;
+  /* Card Background */
   --bg-dark: #071318;
-  
+
   --text-main: #F3F7F8;
   --text-secondary: #9AA8AD;
   --border-color: rgba(255, 255, 255, 0.10);
-  
-  --primary: #5CB6C9; /* Lighter teal for dark mode contrast */
+
+  --primary: #5CB6C9;
+  /* Lighter teal for dark mode contrast */
   --primary-deep: #7AD1E3;
   --secondary: #5CB6C9;
   --accent: #5CB6C9;
-  
+
   /* Shadow adjustments for dark mode */
   --shadow-sm: 0 4px 12px rgba(0, 0, 0, 0.2);
   --shadow-md: 0 8px 24px rgba(0, 0, 0, 0.3);
@@ -28,23 +32,34 @@
 [data-theme="dark"] .bg-light {
   background-color: var(--bg-light) !important;
 }
+
 [data-theme="dark"] .bg-white {
   background-color: var(--bg-card) !important;
 }
+
 [data-theme="dark"] .bg-dark {
   background-color: var(--bg-dark) !important;
 }
+
 [data-theme="dark"] body {
   background-color: var(--bg-light) !important;
   color: var(--text-main) !important;
 }
+
 [data-theme="dark"] .text-muted {
   color: var(--text-secondary) !important;
 }
+
 [data-theme="dark"] .text-dark {
   color: var(--text-main) !important;
 }
-[data-theme="dark"] h1, [data-theme="dark"] h2, [data-theme="dark"] h3, [data-theme="dark"] h4, [data-theme="dark"] h5, [data-theme="dark"] h6 {
+
+[data-theme="dark"] h1,
+[data-theme="dark"] h2,
+[data-theme="dark"] h3,
+[data-theme="dark"] h4,
+[data-theme="dark"] h5,
+[data-theme="dark"] h6 {
   color: var(--text-main) !important;
 }
 
@@ -53,28 +68,54 @@
   background: rgba(20, 44, 53, 0.95);
   border-color: rgba(255, 255, 255, 0.05);
 }
-[data-theme="dark"] .navbar-brand { color: var(--primary) !important; }
+[data-theme="dark"] .navbar-floating.scrolled {
+  background: rgba(20, 44, 53, 0.98);
+}
+@media (max-width: 1199px) {
+  [data-theme="dark"] .navbar-collapse {
+    background: var(--bg-card);
+    border-color: var(--border-color);
+  }
+}
+[data-theme="dark"] .navbar-toggler-icon {
+  filter: invert(1);
+}
+
+[data-theme="dark"] .navbar-brand {
+  color: var(--primary) !important;
+}
+
 [data-theme="dark"] .nav-link {
   color: var(--text-main) !important;
 }
-[data-theme="dark"] .nav-link:hover, 
-[data-theme="dark"] .nav-link.active {
+
+[data-theme="dark"] .nav-link:hover {
   background-color: rgba(92, 182, 201, 0.15);
   color: var(--primary) !important;
 }
 
+[data-theme="dark"] .nav-link.active,
+[data-theme="dark"] .dropdown-item.active {
+  background-color: var(--primary) !important;
+  color: #0C2028 !important;
+}
+
 /* Button Dark Mode Overrides if needed */
 [data-theme="dark"] .btn-primary {
-  color: #0C2028 !important; /* Dark text on light primary */
+  color: #0C2028 !important;
+  /* Dark text on light primary */
 }
+
 [data-theme="dark"] .btn-primary:hover {
   background-color: var(--primary-deep) !important;
   color: #0C2028 !important;
 }
+
 [data-theme="dark"] .btn-outline {
   color: var(--primary) !important;
   border-color: var(--primary) !important;
 }
+
 [data-theme="dark"] .btn-outline:hover {
   background-color: var(--primary) !important;
   color: #0C2028 !important;
@@ -85,6 +126,7 @@
   border-color: var(--border-color);
   background-color: var(--bg-card) !important;
 }
+
 [data-theme="dark"] .premium-card:hover {
   border-color: rgba(92, 182, 201, 0.4);
 }
@@ -96,6 +138,7 @@
   border-color: var(--border-color);
   color: var(--text-main);
 }
+
 [data-theme="dark"] .form-control:focus,
 [data-theme="dark"] .form-select:focus {
   background-color: #1E3D4A;
@@ -106,9 +149,40 @@
 
 /* Toggle Buttons */
 [data-theme="dark"] .btn-outline-secondary {
-    color: var(--text-main) !important;
-    border-color: var(--border-color) !important;
+  color: var(--text-main) !important;
+  border-color: var(--border-color) !important;
 }
+
 [data-theme="dark"] .btn-outline-secondary:hover {
-    background-color: rgba(255, 255, 255, 0.1) !important;
+  background-color: rgba(255, 255, 255, 0.1) !important;
+}
+
+/* Form inputs placeholder in dark mode */
+[data-theme="dark"] .form-control::placeholder {
+  color: #ffffff;
+  opacity: 1;
+}
+
+/* Accordion Dark Mode */
+[data-theme="dark"] .accordion-item {
+  background-color: var(--bg-card) !important;
+  border-color: var(--border-color) !important;
+}
+
+[data-theme="dark"] .accordion-button {
+  background-color: var(--bg-warm) !important;
+  color: var(--text-main) !important;
+}
+
+[data-theme="dark"] .accordion-button:not(.collapsed) {
+  background-color: rgba(92, 182, 201, 0.15) !important;
+  color: var(--primary) !important;
+}
+
+[data-theme="dark"] .accordion-button::after {
+  filter: invert(1) grayscale(100%) brightness(200%);
+}
+
+[data-theme="dark"] .accordion-body {
+  color: var(--text-secondary) !important;
 }
