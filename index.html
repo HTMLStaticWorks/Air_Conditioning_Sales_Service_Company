@@ -1,1 +1,445 @@
-testw
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Air Conditioning Sales & Service | Comfort, Engineered.</title>
+    <meta name="description"
+        content="Premium air-conditioning solutions, professional installation and dependable maintenance for homes and businesses.">
+
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/dark-mode.css">
+    <link rel="stylesheet" href="css/rtl.css">
+
+    <link rel="icon" type="image/svg+xml"
+        href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'%3E%3Cpath fill='%23176B87' d='M288 32c0-17.7-14.3-32-32-32s-32 14.3-32 32V256c0 17.7 14.3 32 32 32s32-14.3 32-32V32zM143.5 120.5c13.6-13.6 13.6-35.8 0-49.4s-35.8-13.6-49.4 0L120.5 143.5c-13.6 13.6-13.6 35.8 0 49.4s35.8 13.6 49.4 0l-26.4-26.4zM32 288c-17.7 0-32-14.3-32-32s14.3-32 32-32H256c17.7 0 32 14.3 32 32s-14.3 32-32 32H32zM120.5 391.5c-13.6 13.6-13.6 35.8 0 49.4s35.8 13.6 49.4 0l26.4-26.4c13.6-13.6 13.6-35.8 0-49.4s-35.8-13.6-49.4 0L120.5 391.5zM224 480c0 17.7 14.3 32 32 32s32-14.3 32-32V256c0-17.7-14.3-32-32-32s-32 14.3-32 32v224zM368.5 391.5c-13.6 13.6-13.6 35.8 0 49.4s35.8 13.6 49.4 0l26.4-26.4c13.6-13.6 13.6-35.8 0-49.4s-35.8-13.6-49.4 0l-26.4 26.4zM480 224c17.7 0 32 14.3 32 32s-14.3 32-32 32H256c-17.7 0-32-14.3-32-32s14.3-32 32-32h224zM391.5 120.5c13.6-13.6 13.6-35.8 0-49.4s-35.8-13.6-49.4 0l-26.4 26.4c-13.6 13.6-13.6 35.8 0 49.4s35.8 13.6 49.4 0l26.4-26.4z'/%3E%3C/svg%3E">
+</head>
+
+<body>
+
+    <!-- Floating Navbar -->
+    <nav class="navbar navbar-expand-xl navbar-floating mt-3">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">
+                <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'%3E%3Cpath fill='%23176B87' d='M288 32c0-17.7-14.3-32-32-32s-32 14.3-32 32V256c0 17.7 14.3 32 32 32s32-14.3 32-32V32zM143.5 120.5c13.6-13.6 13.6-35.8 0-49.4s-35.8-13.6-49.4 0L120.5 143.5c-13.6 13.6-13.6 35.8 0 49.4s35.8 13.6 49.4 0l-26.4-26.4zM32 288c-17.7 0-32-14.3-32-32s14.3-32 32-32H256c17.7 0 32 14.3 32 32s-14.3 32-32 32H32zM120.5 391.5c-13.6 13.6-13.6 35.8 0 49.4s35.8 13.6 49.4 0l26.4-26.4c13.6-13.6 13.6-35.8 0-49.4s-35.8-13.6-49.4 0L120.5 391.5zM224 480c0 17.7 14.3 32 32 32s32-14.3 32-32V256c0-17.7-14.3-32-32-32s-32 14.3-32 32v224zM368.5 391.5c-13.6 13.6-13.6 35.8 0 49.4s35.8 13.6 49.4 0l26.4-26.4c13.6-13.6 13.6-35.8 0-49.4s-35.8-13.6-49.4 0l-26.4 26.4zM480 224c17.7 0 32 14.3 32 32s-14.3 32-32 32H256c-17.7 0-32-14.3-32-32s14.3-32 32-32h224zM391.5 120.5c13.6-13.6 13.6-35.8 0-49.4s-35.8-13.6-49.4 0l-26.4 26.4c-13.6 13.6-13.6 35.8 0 49.4s35.8 13.6 49.4 0l26.4-26.4z'/%3E%3C/svg%3E"
+                    alt="Logo" width="28" height="28" class="logo-spin">
+                AirCare
+            </a>
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                    <li class="nav-item dropdown d-none d-xl-block">
+                        <a class="nav-link dropdown-toggle" href="#" id="homeDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">Home</a>
+                        <ul class="dropdown-menu" aria-labelledby="homeDropdown">
+                            <li><a class="dropdown-item" href="index.html">Home 1</a></li>
+                            <li><a class="dropdown-item" href="home-2.html">Home 2</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item d-xl-none"><a class="nav-link" href="index.html">Home 1</a></li>
+                    <li class="nav-item d-xl-none"><a class="nav-link" href="home-2.html">Home 2</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="products.html">AC Products</a></li>
+                    <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="amc.html">AMC Plans</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link" href="dashboard.html">Dashboard</a></li>
+                </ul>
+                <div class="d-flex align-items-center gap-3">
+                    <button id="theme-toggle-btn"
+                        class="btn btn-outline-secondary rounded-circle d-flex align-items-center justify-content-center p-0"
+                        title="Toggle Dark Mode"
+                        style="width: 36px; height: 36px; border-color: var(--border-color); color: var(--text-main);">
+                        <i class="fa-solid fa-moon fa-lg"></i>
+                    </button>
+                    <button id="rtl-toggle-btn"
+                        class="btn btn-outline-secondary rounded-circle d-flex align-items-center justify-content-center p-0"
+                        title="Toggle RTL"
+                        style="width: 36px; height: 36px; border-color: var(--border-color); color: var(--text-main);">
+                        <i class="fa-solid fa-arrow-right-arrow-left fa-lg"></i>
+                    </button>
+                    <a href="login.html" class="btn btn-primary btn-sm ms-2 me-2">Login</a>
+                    <a href="booking.html" class="btn btn-primary btn-sm">Book Service</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- MAIN CONTENT -->
+    <main>
+        <!-- SECTION 01 — HERO -->
+        <section
+            class="hero-section d-flex align-items-center position-relative overflow-hidden bg-light pt-5 pb-5 mt-4">
+            <!-- Subtle airflow shapes -->
+            <div class="position-absolute top-0 start-0 w-100 h-100"
+                style="pointer-events: none; opacity: 0.05; background: linear-gradient(135deg, var(--primary) 0%, transparent 50%);">
+            </div>
+
+            <div class="container pt-5 pb-4 mt-4">
+                <div class="row align-items-center g-5">
+                    <div class="col-lg-6">
+                        <div class="pe-lg-5">
+                            <span class="text-uppercase fw-bold text-secondary mb-3 d-block letter-spacing-1"
+                                style="letter-spacing: 2px;">Air Conditioning Sales & Service</span>
+                            <h1 class="display-4 fw-bolder mb-4">Comfort That Works As Hard As You Do.</h1>
+                            <p class="lead text-secondary mb-5">Premium air-conditioning solutions, professional
+                                installation and dependable maintenance for homes and businesses.</p>
+
+                            <div class="d-flex flex-wrap gap-3">
+                                <a href="booking.html" class="btn btn-primary btn-lg px-5">Book AC Service</a>
+                                <a href="products.html" class="btn btn-outline btn-lg px-5">Explore ACs</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 position-relative">
+                        <!-- Hero Image -->
+                        <div class="position-relative rounded-4 overflow-hidden shadow-lg" style="aspect-ratio: 4/3;">
+                            <img src="assets/images/home2-hero.jpg" alt="Luxury Interior with AC" class="img-cover">
+                            <!-- Soft cooling overlay -->
+                            <div class="position-absolute inset-0 w-100 h-100"
+                                style="background: linear-gradient(to top, rgba(12,32,40,0.4), transparent); bottom: 0;">
+                            </div>
+
+                            <!-- Floating Info Card -->
+                            <div class="position-absolute bottom-0 start-0 m-4 p-4 bg-white rounded-3 shadow-lg"
+                                style="backdrop-filter: blur(10px); background: rgba(255,255,255,0.9);">
+                                <ul class="list-unstyled mb-0 d-flex gap-4 fw-bold" style="color: var(--primary-deep);">
+                                    <li><i class="fa-solid fa-check text-secondary me-2"></i>INSTALLATION</li>
+                                    <li><i class="fa-solid fa-check text-secondary me-2"></i>SERVICE</li>
+                                    <li><i class="fa-solid fa-check text-secondary me-2"></i>AMC</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 02 — AC PRODUCTS -->
+        <section class="section-padding bg-white">
+            <div class="container">
+                <div class="text-center mb-5 pb-3">
+                    <h2 class="fw-bold">Find The Right AC For Your Space.</h2>
+                    <p class="text-muted">Premium product categories to match your specific cooling needs.</p>
+                </div>
+
+                <div class="row g-4 justify-content-center">
+                    <!-- Product Category Cards -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="premium-card text-center d-flex flex-column h-100">
+                            <div class="mb-4 rounded-3 overflow-hidden" style="height: 200px;">
+                                <img src="assets/images/split.jpg" alt="Split AC" class="img-cover">
+                            </div>
+                            <h3 class="h4 fw-bold">Split AC</h3>
+                            <p class="text-muted mb-4 small">Capacity: 1.0 - 2.5 Ton<br>Best for: Bedrooms, Living
+                                Rooms<br>Energy: Smart Inverter Tech</p>
+                            <a href="products.html" class="btn btn-outline mt-auto">Explore Models</a>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="premium-card text-center d-flex flex-column h-100">
+                            <div class="mb-4 rounded-3 overflow-hidden" style="height: 200px;">
+                                <img src="assets/images/window.jpg" alt="Window AC" class="img-cover">
+                            </div>
+                            <h3 class="h4 fw-bold">Window AC</h3>
+                            <p class="text-muted mb-4 small">Capacity: 1.0 - 2.0 Ton<br>Best for: Small Rooms,
+                                Apartments<br>Energy: High Efficiency</p>
+                            <a href="products.html" class="btn btn-outline mt-auto">Explore Models</a>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="premium-card text-center d-flex flex-column h-100">
+                            <div class="mb-4 rounded-3 overflow-hidden" style="height: 200px;">
+                                <img src="assets/images/commercial.jpg" alt="Commercial AC" class="img-cover">
+                            </div>
+                            <h3 class="h4 fw-bold">Commercial AC</h3>
+                            <p class="text-muted mb-4 small">Capacity: Custom<br>Best for: Offices,
+                                Restaurants<br>Energy: VRF / Ducted Systems</p>
+                            <a href="products.html" class="btn btn-outline mt-auto">Explore Models</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center mt-5">
+                    <a href="products.html" class="btn btn-secondary">View All Categories</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 03 — SERVICES -->
+        <section class="section-padding bg-warm">
+            <div class="container">
+                <div class="text-center mb-5 pb-3">
+                    <h2 class="fw-bold">Complete AC Care From Installation To Maintenance.</h2>
+                </div>
+
+                <div class="row g-4 justify-content-center">
+                    <div class="col-md-6 col-lg-4">
+                        <div class="premium-card text-center d-flex flex-column h-100">
+                            <div class="mb-4 rounded-3 overflow-hidden" style="height: 200px;">
+                                <img src="assets/images/maintain1.jpg" alt="AC Installation" class="img-cover">
+                            </div>
+                            <h3 class="h5 fw-bold mb-3">AC Installation</h3>
+                            <p class="text-muted small mb-4">Professional fitting by certified technicians ensuring
+                                optimal performance.</p>
+                            <a href="#" class="mt-auto fw-bold text-decoration-none">Learn More <i
+                                    class="fa-solid fa-arrow-right ms-1"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="premium-card text-center d-flex flex-column h-100">
+                            <div class="mb-4 rounded-3 overflow-hidden" style="height: 200px;">
+                                <img src="assets/images/maintain2.jpg
+                                " alt="AC Servicing" class="img-cover">
+                            </div>
+                            <h3 class="h5 fw-bold mb-3">AC Servicing</h3>
+                            <p class="text-muted small mb-4">Regular checkups and maintenance to keep your unit running
+                                efficiently.</p>
+                            <a href="#" class="mt-auto fw-bold text-decoration-none">Learn More <i
+                                    class="fa-solid fa-arrow-right ms-1"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="premium-card text-center d-flex flex-column h-100">
+                            <div class="mb-4 rounded-3 overflow-hidden" style="height: 200px;">
+                                <img src="assets/images/maintain3.jpg" alt="AC Cleaning" class="img-cover">
+                            </div>
+                            <h3 class="h5 fw-bold mb-3">AC Cleaning</h3>
+                            <p class="text-muted small mb-4">Deep cleaning of coils, filters, and ducts for healthier
+                                indoor air quality.</p>
+                            <a href="#" class="mt-auto fw-bold text-decoration-none">Learn More <i
+                                    class="fa-solid fa-arrow-right ms-1"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 04 — INSTALLATION PROCESS -->
+        <section class="section-padding bg-white">
+            <div class="container">
+                <div class="text-center mb-5 pb-3">
+                    <h2 class="fw-bold">Installed Right From Day One.</h2>
+                </div>
+
+                <div class="position-relative">
+                    <!-- Line connecting steps (visible on lg screens) -->
+                    <div class="position-absolute top-50 start-0 w-100 border-top border-2 border-secondary d-none d-lg-block"
+                        style="opacity: 0.3; z-index: 0;"></div>
+
+                    <div class="row g-4 position-relative" style="z-index: 1;">
+                        <div class="col-lg text-center">
+                            <div class="bg-white border border-2 border-primary rounded-circle d-flex align-items-center justify-content-center mx-auto mb-3"
+                                style="width: 60px; height: 60px;">
+                                <span class="fw-bold fs-5 text-primary">01</span>
+                            </div>
+                            <h4 class="h6 fw-bold">SITE ASSESSMENT</h4>
+                        </div>
+                        <div class="col-lg text-center">
+                            <div class="bg-white border border-2 border-primary rounded-circle d-flex align-items-center justify-content-center mx-auto mb-3"
+                                style="width: 60px; height: 60px;">
+                                <span class="fw-bold fs-5 text-primary">02</span>
+                            </div>
+                            <h4 class="h6 fw-bold">AC SELECTION</h4>
+                        </div>
+                        <div class="col-lg text-center">
+                            <div class="bg-white border border-2 border-primary rounded-circle d-flex align-items-center justify-content-center mx-auto mb-3"
+                                style="width: 60px; height: 60px;">
+                                <span class="fw-bold fs-5 text-primary">03</span>
+                            </div>
+                            <h4 class="h6 fw-bold">INSTALLATION</h4>
+                        </div>
+                        <div class="col-lg text-center">
+                            <div class="bg-white border border-2 border-primary rounded-circle d-flex align-items-center justify-content-center mx-auto mb-3"
+                                style="width: 60px; height: 60px;">
+                                <span class="fw-bold fs-5 text-primary">04</span>
+                            </div>
+                            <h4 class="h6 fw-bold">TESTING</h4>
+                        </div>
+                        <div class="col-lg text-center">
+                            <div class="bg-white border border-2 border-primary rounded-circle d-flex align-items-center justify-content-center mx-auto mb-3"
+                                style="width: 60px; height: 60px;">
+                                <span class="fw-bold fs-5 text-primary">05</span>
+                            </div>
+                            <h4 class="h6 fw-bold">FINAL HANDOVER</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 05 — AMC PLANS -->
+        <section class="section-padding bg-light">
+            <div class="container">
+                <div class="text-center mb-5 pb-3">
+                    <h2 class="fw-bold">Keep Your AC Performing At Its Best.</h2>
+                </div>
+
+                <div class="row justify-content-center g-4">
+                    <div class="col-md-6 col-lg-4">
+                        <div class="premium-card text-center position-relative">
+                            <h3 class="h4 fw-bold mb-3">Essential Care</h3>
+                            <p class="text-muted small mb-4">Basic maintenance for residential units.</p>
+                            <ul class="list-unstyled text-start mb-4">
+                                <li class="mb-2"><i class="fa-solid fa-check text-secondary me-2"></i> 2 Service
+                                    visits/year</li>
+                                <li class="mb-2"><i class="fa-solid fa-check text-secondary me-2"></i> Basic coil
+                                    cleaning</li>
+                                <li class="mb-2"><i class="fa-solid fa-check text-secondary me-2"></i> Performance
+                                    inspection</li>
+                            </ul>
+                            <a href="amc.html" class="btn btn-outline w-100">View Details</a>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="premium-card text-center border-primary position-relative"
+                            style="border-width: 2px;">
+                            <span
+                                class="badge bg-accent text-white position-absolute top-0 start-50 translate-middle rounded-pill px-3 py-2">Most
+                                Popular</span>
+                            <h3 class="h4 fw-bold mb-3">Complete Care</h3>
+                            <p class="text-muted small mb-4">Comprehensive coverage for ultimate peace of mind.</p>
+                            <ul class="list-unstyled text-start mb-4">
+                                <li class="mb-2"><i class="fa-solid fa-check text-secondary me-2"></i> 4 Service
+                                    visits/year</li>
+                                <li class="mb-2"><i class="fa-solid fa-check text-secondary me-2"></i> Deep chemical
+                                    cleaning</li>
+                                <li class="mb-2"><i class="fa-solid fa-check text-secondary me-2"></i> Priority support
+                                </li>
+                            </ul>
+                            <a href="amc.html" class="btn btn-primary w-100">View Details</a>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="premium-card text-center position-relative">
+                            <h3 class="h4 fw-bold mb-3">Business Care</h3>
+                            <p class="text-muted small mb-4">Tailored solutions for commercial spaces.</p>
+                            <ul class="list-unstyled text-start mb-4">
+                                <li class="mb-2"><i class="fa-solid fa-check text-secondary me-2"></i> Custom scheduling
+                                </li>
+                                <li class="mb-2"><i class="fa-solid fa-check text-secondary me-2"></i> Dedicated account
+                                    manager</li>
+                                <li class="mb-2"><i class="fa-solid fa-check text-secondary me-2"></i> Emergency 24/7
+                                    service</li>
+                            </ul>
+                            <a href="amc.html" class="btn btn-outline w-100">View Details</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center mt-5">
+                    <a href="amc.html" class="btn btn-secondary px-5">View All AMC Plans</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 06 — FINAL CTA -->
+        <section class="position-relative overflow-hidden">
+            <!-- Large interior image background -->
+            <div class="position-absolute w-100 h-100" style="z-index: 0;">
+                <img src="assets/images/home1-bg.jpg" alt="Beautiful modern home" class="img-cover"
+                    style="filter: brightness(0.4);">
+            </div>
+
+            <div class="container position-relative section-padding text-center px-4 px-md-3" style="z-index: 1;">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <h2 class="display-5 fw-bolder text-white mb-4">Better Air. Better Comfort.</h2>
+                        <p class="lead text-white-50 mb-5">Whether you need a new AC, professional installation or
+                            ongoing maintenance, we're ready to help.</p>
+                        <div class="d-flex flex-wrap justify-content-center gap-3">
+                            <a href="booking.html" class="btn btn-primary btn-lg px-5">Book AC Service</a>
+                            <a href="contact.html" class="btn btn-outline btn-lg px-5"
+                                style="border-color: #fff; color: #fff;">Get Free Quote</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer pt-5 pb-4">
+        <div class="container pt-4">
+            <div class="row g-4">
+                <div class="col-lg-4 pe-lg-5">
+                    <a href="index.html"
+                        class="text-decoration-none d-flex align-items-center gap-2 h4 mb-4 footer-title">
+                        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'%3E%3Cpath fill='%23176B87' d='M288 32c0-17.7-14.3-32-32-32s-32 14.3-32 32V256c0 17.7 14.3 32 32 32s32-14.3 32-32V32zM143.5 120.5c13.6-13.6 13.6-35.8 0-49.4s-35.8-13.6-49.4 0L120.5 143.5c-13.6 13.6-13.6 35.8 0 49.4s35.8 13.6 49.4 0l-26.4-26.4zM32 288c-17.7 0-32-14.3-32-32s14.3-32 32-32H256c17.7 0 32 14.3 32 32s-14.3 32-32 32H32zM120.5 391.5c-13.6 13.6-13.6 35.8 0 49.4s35.8 13.6 49.4 0l26.4-26.4c13.6-13.6 13.6-35.8 0-49.4s-35.8-13.6-49.4 0L120.5 391.5zM224 480c0 17.7 14.3 32 32 32s32-14.3 32-32V256c0-17.7-14.3-32-32-32s-32 14.3-32 32v224zM368.5 391.5c-13.6 13.6-13.6 35.8 0 49.4s35.8 13.6 49.4 0l26.4-26.4c13.6-13.6 13.6-35.8 0-49.4s-35.8-13.6-49.4 0l-26.4 26.4zM480 224c17.7 0 32 14.3 32 32s-14.3 32-32 32H256c-17.7 0-32-14.3-32-32s14.3-32 32-32h224zM391.5 120.5c13.6-13.6 13.6-35.8 0-49.4s-35.8-13.6-49.4 0l-26.4 26.4c-13.6 13.6-13.6 35.8 0 49.4s35.8 13.6 49.4 0l26.4-26.4z'/%3E%3C/svg%3E"
+                            alt="Logo" width="28" height="28" class="logo-spin"> AirCare
+                    </a>
+                    <p class="text-secondary small mb-4">Premium air-conditioning solutions, professional installation
+                        and dependable maintenance for homes and businesses.</p>
+                    <div class="d-flex gap-3">
+                        <a href="#" class="footer-link"><i class="fa-brands fa-facebook fa-lg"></i></a>
+                        <a href="#" class="footer-link"><i class="fa-brands fa-instagram fa-lg"></i></a>
+                        <a href="#" class="footer-link"><i class="fa-brands fa-twitter fa-lg"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6">
+                    <h5 class="mb-4 h6 fw-bold footer-title">Company</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="about.html" class="footer-link text-decoration-none">About Us</a></li>
+                        <li class="mb-2"><a href="services.html" class="footer-link text-decoration-none">Services</a>
+                        </li>
+                        <li class="mb-2"><a href="projects.html" class="footer-link text-decoration-none">Projects</a>
+                        </li>
+                        <li class="mb-2"><a href="contact.html" class="footer-link text-decoration-none">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-6">
+                    <h5 class="mb-4 h6 fw-bold footer-title">Services</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="service-details.html" class="footer-link text-decoration-none">AC
+                                Installation</a></li>
+                        <li class="mb-2"><a href="service-details.html" class="footer-link text-decoration-none">AC
+                                Repair</a></li>
+                        <li class="mb-2"><a href="amc.html" class="footer-link text-decoration-none">AMC Plans</a></li>
+                        <li class="mb-2"><a href="pricing.html" class="footer-link text-decoration-none">Pricing</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-4">
+                    <h5 class="mb-4 h6 fw-bold footer-title">Newsletter</h5>
+                    <p class="text-secondary small mb-4">Subscribe for maintenance tips and exclusive offers.</p>
+                    <form class="d-flex">
+                        <input type="email" class="form-control rounded-start-2 rounded-end-0 border"
+                            placeholder="Email Address" aria-label="Email Address">
+                        <button class="btn btn-secondary rounded-start-0 rounded-end-2 px-4"
+                            type="button">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <hr class="mt-5 mb-4">
+            <div class="row align-items-center">
+                <div class="col-md-6 text-center text-md-start">
+                    <p class="text-secondary small mb-0">&copy; 2026 AirCare. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end mt-3 mt-md-0">
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <button id="scrollTopBtn" title="Go to top">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+    <!-- Bootstrap 5 JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>

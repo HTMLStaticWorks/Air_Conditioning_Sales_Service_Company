@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | AirCare</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/dark-mode.css">
+    <link rel="stylesheet" href="css/rtl.css">
+
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'%3E%3Cpath fill='%23176B87' d='M288 32c0-17.7-14.3-32-32-32s-32 14.3-32 32V256c0 17.7 14.3 32 32 32s32-14.3 32-32V32zM143.5 120.5c13.6-13.6 13.6-35.8 0-49.4s-35.8-13.6-49.4 0L120.5 143.5c-13.6 13.6-13.6 35.8 0 49.4s35.8 13.6 49.4 0l-26.4-26.4zM32 288c-17.7 0-32-14.3-32-32s14.3-32 32-32H256c17.7 0 32 14.3 32 32s-14.3 32-32 32H32zM120.5 391.5c-13.6 13.6-13.6 35.8 0 49.4s35.8 13.6 49.4 0l26.4-26.4c13.6-13.6 13.6-35.8 0-49.4s-35.8-13.6-49.4 0L120.5 391.5zM224 480c0 17.7 14.3 32 32 32s32-14.3 32-32V256c0-17.7-14.3-32-32-32s-32 14.3-32 32v224zM368.5 391.5c-13.6 13.6-13.6 35.8 0 49.4s35.8 13.6 49.4 0l26.4-26.4c13.6-13.6 13.6-35.8 0-49.4s-35.8-13.6-49.4 0l-26.4 26.4zM480 224c17.7 0 32 14.3 32 32s-14.3 32-32 32H256c-17.7 0-32-14.3-32-32s14.3-32 32-32h224zM391.5 120.5c13.6-13.6 13.6-35.8 0-49.4s-35.8-13.6-49.4 0l-26.4 26.4c-13.6 13.6-13.6 35.8 0 49.4s35.8 13.6 49.4 0l26.4-26.4z'/%3E%3C/svg%3E">
+</head>
+<body class="bg-light position-relative">
+
+    <!-- Top right controls (not fixed, just absolute) -->
+    <div class="position-absolute top-0 end-0 p-4 d-flex gap-3" style="z-index: 10;">
+        <button id="theme-toggle-btn" class="btn btn-outline-secondary rounded-circle d-flex align-items-center justify-content-center p-0" title="Toggle Dark Mode" style="width: 36px; height: 36px; border-color: var(--border-color); color: var(--text-main);">
+            <i class="fa-solid fa-moon fa-lg"></i>
+        </button>
+        <button id="rtl-toggle-btn" class="btn btn-outline-secondary rounded-circle d-flex align-items-center justify-content-center p-0" title="Toggle RTL" style="width: 36px; height: 36px; border-color: var(--border-color); color: var(--text-main);">
+            <i class="fa-solid fa-arrow-right-arrow-left fa-lg"></i>
+        </button>
+    </div>
+
+    <div class="container d-flex align-items-center justify-content-center min-vh-100 py-5">
+        <div class="premium-card border-0 shadow-sm p-4 p-md-5" style="max-width: 450px; width: 100%; border-radius: 1rem;">
+            <div class="text-center mb-4">
+                <a class="text-decoration-none fw-bold h4 mb-3 d-inline-flex align-items-center gap-2" href="index.html" style="color: var(--primary) !important;">
+                    <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'%3E%3Cpath fill='%23176B87' d='M288 32c0-17.7-14.3-32-32-32s-32 14.3-32 32V256c0 17.7 14.3 32 32 32s32-14.3 32-32V32zM143.5 120.5c13.6-13.6 13.6-35.8 0-49.4s-35.8-13.6-49.4 0L120.5 143.5c-13.6 13.6-13.6 35.8 0 49.4s35.8 13.6 49.4 0l-26.4-26.4zM32 288c-17.7 0-32-14.3-32-32s14.3-32 32-32H256c17.7 0 32 14.3 32 32s-14.3 32-32 32H32zM120.5 391.5c-13.6 13.6-13.6 35.8 0 49.4s35.8 13.6 49.4 0l26.4-26.4c13.6-13.6 13.6-35.8 0-49.4s-35.8-13.6-49.4 0L120.5 391.5zM224 480c0 17.7 14.3 32 32 32s32-14.3 32-32V256c0-17.7-14.3-32-32-32s-32 14.3-32 32v224zM368.5 391.5c-13.6 13.6-13.6 35.8 0 49.4s35.8 13.6 49.4 0l26.4-26.4c13.6-13.6 13.6-35.8 0-49.4s-35.8-13.6-49.4 0l-26.4 26.4zM480 224c17.7 0 32 14.3 32 32s-14.3 32-32 32H256c-17.7 0-32-14.3-32-32s14.3-32 32-32h224zM391.5 120.5c13.6-13.6 13.6-35.8 0-49.4s-35.8-13.6-49.4 0l-26.4 26.4c-13.6 13.6-13.6 35.8 0 49.4s35.8 13.6 49.4 0l26.4-26.4z'/%3E%3C/svg%3E" alt="Logo" width="28" height="28" class="logo-spin">
+                    <span>AirCare</span>
+                </a>
+                <h1 class="fw-bolder h4">Welcome Back</h1>
+                <p class="text-muted small">Login to manage your services and AMC plans.</p>
+            </div>
+            
+            <form>
+                <div class="mb-3">
+                    <label class="form-label fw-bold small">Email Address</label>
+                    <input type="email" class="form-control form-control-lg bg-light border-0" required>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label fw-bold small">Password</label>
+                    <div class="input-group">
+                        <input type="password" class="form-control form-control-lg bg-light border-0" id="passwordInput" required style="border-right: none;">
+                        <button class="btn btn-light bg-light border-0 text-muted px-3" type="button" id="togglePassword">
+                            <i class="fa-regular fa-eye"></i>
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="d-flex justify-content-between align-items-center mb-4">
+                    <div class="form-check mb-0">
+                        <input type="checkbox" class="form-check-input" id="rememberMe">
+                        <label class="form-check-label text-muted small" for="rememberMe">Remember Me</label>
+                    </div>
+                    <a href="#" class="text-primary small text-decoration-none hover-underline fw-medium">Forgot Password?</a>
+                </div>
+                
+                <a href="dashboard.html" class="btn btn-primary btn-lg w-100 mb-3 fw-bold">Login</a>
+                
+                <div class="d-flex align-items-center my-4">
+                    <hr class="flex-grow-1 text-muted">
+                    <span class="px-3 text-muted small">OR</span>
+                    <hr class="flex-grow-1 text-muted">
+                </div>
+                
+                <div class="d-flex gap-3 mb-4">
+                    <button type="button" class="btn btn-outline-secondary w-100 d-flex align-items-center justify-content-center gap-2 social-btn fw-semibold">
+                        <i class="fa-brands fa-google text-danger"></i> Google
+                    </button>
+                    <button type="button" class="btn btn-outline-secondary w-100 d-flex align-items-center justify-content-center gap-2 social-btn fw-semibold">
+                        <i class="fa-brands fa-apple fs-5 text-dark"></i> Apple
+                    </button>
+                </div>
+            </form>
+            
+            <p class="text-center text-muted small mb-0">Don't have an account? <a href="register.html" class="text-primary text-decoration-none fw-bold hover-underline">Create Account</a></p>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+        document.getElementById('togglePassword').addEventListener('click', function() {
+            const passwordInput = document.getElementById('passwordInput');
+            const icon = this.querySelector('i');
+            if (passwordInput.type === 'password') {
+                passwordInput.type = 'text';
+                icon.classList.remove('fa-eye');
+                icon.classList.add('fa-eye-slash');
+            } else {
+                passwordInput.type = 'password';
+                icon.classList.remove('fa-eye-slash');
+                icon.classList.add('fa-eye');
+            }
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard | AirCare</title>
+    
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/dark-mode.css">
+    <link rel="stylesheet" href="css/rtl.css">
+
+    <link rel="stylesheet" href="css/dashboard.css">
+
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'%3E%3Cpath fill='%23176B87' d='M288 32c0-17.7-14.3-32-32-32s-32 14.3-32 32V256c0 17.7 14.3 32 32 32s32-14.3 32-32V32zM143.5 120.5c13.6-13.6 13.6-35.8 0-49.4s-35.8-13.6-49.4 0L120.5 143.5c-13.6 13.6-13.6 35.8 0 49.4s35.8 13.6 49.4 0l-26.4-26.4zM32 288c-17.7 0-32-14.3-32-32s14.3-32 32-32H256c17.7 0 32 14.3 32 32s-14.3 32-32 32H32zM120.5 391.5c-13.6 13.6-13.6 35.8 0 49.4s35.8 13.6 49.4 0l26.4-26.4c13.6-13.6 13.6-35.8 0-49.4s-35.8-13.6-49.4 0L120.5 391.5zM224 480c0 17.7 14.3 32 32 32s32-14.3 32-32V256c0-17.7-14.3-32-32-32s-32 14.3-32 32v224zM368.5 391.5c-13.6 13.6-13.6 35.8 0 49.4s35.8 13.6 49.4 0l26.4-26.4c13.6-13.6 13.6-35.8 0-49.4s-35.8-13.6-49.4 0l-26.4 26.4zM480 224c17.7 0 32 14.3 32 32s-14.3 32-32 32H256c-17.7 0-32-14.3-32-32s14.3-32 32-32h224zM391.5 120.5c13.6-13.6 13.6-35.8 0-49.4s-35.8-13.6-49.4 0l-26.4 26.4c-13.6 13.6-13.6 35.8 0 49.4s35.8 13.6 49.4 0l26.4-26.4z'/%3E%3C/svg%3E">
+</head>
+<body>
+
+    <div class="dashboard-layout">
+        <!-- SIDEBAR -->
+        <aside class="sidebar" id="dashboardSidebar">
+            <a href="index.html" class="sidebar-brand d-flex align-items-center gap-2 mb-5 text-decoration-none h4 fw-bold" style="color: var(--primary) !important;">
+                <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'%3E%3Cpath fill='%23176B87' d='M288 32c0-17.7-14.3-32-32-32s-32 14.3-32 32V256c0 17.7 14.3 32 32 32s32-14.3 32-32V32zM143.5 120.5c13.6-13.6 13.6-35.8 0-49.4s-35.8-13.6-49.4 0L120.5 143.5c-13.6 13.6-13.6 35.8 0 49.4s35.8 13.6 49.4 0l-26.4-26.4zM32 288c-17.7 0-32-14.3-32-32s14.3-32 32-32H256c17.7 0 32 14.3 32 32s-14.3 32-32 32H32zM120.5 391.5c-13.6 13.6-13.6 35.8 0 49.4s35.8 13.6 49.4 0l26.4-26.4c13.6-13.6 13.6-35.8 0-49.4s-35.8-13.6-49.4 0L120.5 391.5zM224 480c0 17.7 14.3 32 32 32s32-14.3 32-32V256c0-17.7-14.3-32-32-32s-32 14.3-32 32v224zM368.5 391.5c-13.6 13.6-13.6 35.8 0 49.4s35.8 13.6 49.4 0l26.4-26.4c13.6-13.6 13.6-35.8 0-49.4s-35.8-13.6-49.4 0l-26.4 26.4zM480 224c17.7 0 32 14.3 32 32s-14.3 32-32 32H256c-17.7 0-32-14.3-32-32s14.3-32 32-32h224zM391.5 120.5c13.6-13.6 13.6-35.8 0-49.4s-35.8-13.6-49.4 0l-26.4 26.4c-13.6 13.6-13.6 35.8 0 49.4s35.8 13.6 49.4 0l26.4-26.4z'/%3E%3C/svg%3E" alt="Logo" width="28" height="28" class="logo-spin">
+                AirCare
+            </a>
+            <div class="sidebar-profile d-none mb-4 text-center">
+                <img src="assets/images/team1.jpg" alt="User Profile" class="rounded-circle" width="60" height="60" style="object-fit: cover;">
+                <h6 class="mt-2 mb-0 fw-bold">John Doe</h6>
+            </div>
+            
+            <!-- Mobile User Controls -->
+            <div class="d-lg-none border-bottom pb-4 mb-4">
+                <div class="d-flex align-items-center gap-3 mb-3 px-3">
+                    <img src="assets/images/team1.jpg" alt="User Profile" class="rounded-circle topbar-profile" width="40" height="40" style="object-fit: cover;">
+                    <div class="fw-bold">John Doe</div>
+                </div>
+                <div class="d-flex gap-2 px-3">
+                    <button class="theme-toggle-btn btn btn-outline-secondary rounded-circle d-flex align-items-center justify-content-center p-0" title="Toggle Dark Mode" style="width: 36px; height: 36px; border-color: var(--border-color); color: var(--text-main);">
+                        <i class="fa-solid fa-moon fa-lg"></i>
+                    </button>
+                    <button class="rtl-toggle-btn btn btn-outline-secondary rounded-circle d-flex align-items-center justify-content-center p-0" title="Toggle RTL" style="width: 36px; height: 36px; border-color: var(--border-color); color: var(--text-main);">
+                        <i class="fa-solid fa-arrow-right-arrow-left fa-lg"></i>
+                    </button>
+                    <button class="btn btn-outline-secondary rounded-circle d-flex align-items-center justify-content-center p-0 position-relative" title="Notifications" style="width: 36px; height: 36px; border-color: var(--border-color); color: var(--text-main);">
+                        <i class="fa-regular fa-bell fa-lg"></i>
+                        <span class="position-absolute top-0 start-100 translate-middle p-1 bg-danger border border-light rounded-circle"></span>
+                    </button>
+                </div>
+            </div>
+            
+            <ul class="nav-sidebar nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                <li class="nav-item">
+                    <a class="nav-link active" id="v-pills-overview-tab" data-bs-toggle="pill" href="#v-pills-overview" role="tab" aria-controls="v-pills-overview" aria-selected="true"><i class="fa-solid fa-gauge me-3"></i>Overview</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="v-pills-active-tab" data-bs-toggle="pill" href="#v-pills-active" role="tab" aria-controls="v-pills-active" aria-selected="false"><i class="fa-solid fa-spinner me-3"></i>Active Service</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="v-pills-booking-tab" data-bs-toggle="pill" href="#v-pills-booking" role="tab" aria-controls="v-pills-booking" aria-selected="false"><i class="fa-solid fa-calendar-plus me-3"></i>Book Service</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="v-pills-amc-tab" data-bs-toggle="pill" href="#v-pills-amc" role="tab" aria-controls="v-pills-amc" aria-selected="false"><i class="fa-solid fa-shield-halved me-3"></i>AMC Plan</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="v-pills-history-tab" data-bs-toggle="pill" href="#v-pills-history" role="tab" aria-controls="v-pills-history" aria-selected="false"><i class="fa-solid fa-clock-rotate-left me-3"></i>Service History</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="v-pills-invoices-tab" data-bs-toggle="pill" href="#v-pills-invoices" role="tab" aria-controls="v-pills-invoices" aria-selected="false"><i class="fa-solid fa-file-invoice-dollar me-3"></i>Invoices</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="v-pills-profile-tab" data-bs-toggle="pill" href="#v-pills-profile" role="tab" aria-controls="v-pills-profile" aria-selected="false"><i class="fa-solid fa-user me-3"></i>Profile</a>
+                </li>
+                <li class="nav-item mt-4">
+                    <a class="nav-link text-danger" href="index.html" style="color: #dc3545 !important;"><i class="fa-solid fa-arrow-right-from-bracket me-3"></i>Logout</a>
+                </li>
+            </ul>
+        </aside>
+
+        <!-- MAIN CONTENT -->
+        <main class="main-content">
+            <!-- TOPBAR -->
+            <header class="dashboard-topbar d-flex justify-content-between align-items-center">
+                <!-- Logo for mobile only -->
+                <a href="index.html" class="sidebar-brand-mobile d-lg-none d-flex align-items-center gap-2 text-decoration-none">
+                    <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'%3E%3Cpath fill='%23176B87' d='M288 32c0-17.7-14.3-32-32-32s-32 14.3-32 32V256c0 17.7 14.3 32 32 32s32-14.3 32-32V32zM143.5 120.5c13.6-13.6 13.6-35.8 0-49.4s-35.8-13.6-49.4 0L120.5 143.5c-13.6 13.6-13.6 35.8 0 49.4s35.8 13.6 49.4 0l-26.4-26.4zM32 288c-17.7 0-32-14.3-32-32s14.3-32 32-32H256c17.7 0 32 14.3 32 32s-14.3 32-32 32H32zM120.5 391.5c-13.6 13.6-13.6 35.8 0 49.4s35.8 13.6 49.4 0l26.4-26.4c13.6-13.6 13.6-35.8 0-49.4s-35.8-13.6-49.4 0L120.5 391.5zM224 480c0 17.7 14.3 32 32 32s32-14.3 32-32V256c0-17.7-14.3-32-32-32s-32 14.3-32 32v224zM368.5 391.5c-13.6 13.6-13.6 35.8 0 49.4s35.8 13.6 49.4 0l26.4-26.4c13.6-13.6 13.6-35.8 0-49.4s-35.8-13.6-49.4 0l-26.4 26.4zM480 224c17.7 0 32 14.3 32 32s-14.3 32-32 32H256c-17.7 0-32-14.3-32-32s14.3-32 32-32h224zM391.5 120.5c13.6-13.6 13.6-35.8 0-49.4s-35.8-13.6-49.4 0l-26.4 26.4c-13.6 13.6-13.6 35.8 0 49.4s35.8 13.6 49.4 0l26.4-26.4z'/%3E%3C/svg%3E" alt="Logo" width="28" height="28" class="logo-spin">
+                    <span class="fw-bold h5 mb-0" style="color: var(--primary);">AirCare</span>
+                </a>
+                <div class="d-none d-lg-block"></div> <!-- Spacer for desktop -->
+                
+                <div class="d-flex align-items-center gap-3 ms-auto">
+                    <!-- Desktop Icons -->
+                    <button class="d-none d-lg-flex btn btn-outline-secondary rounded-circle align-items-center justify-content-center p-0 position-relative" title="Notifications" style="width: 36px; height: 36px; border-color: var(--border-color); color: var(--text-main);">
+                        <i class="fa-regular fa-bell fa-lg"></i>
+                        <span class="position-absolute top-0 start-100 translate-middle p-1 bg-danger border border-light rounded-circle"></span>
+                    </button>
+                    <button class="theme-toggle-btn d-none d-lg-flex btn btn-outline-secondary rounded-circle align-items-center justify-content-center p-0" title="Toggle Dark Mode" style="width: 36px; height: 36px; border-color: var(--border-color); color: var(--text-main);">
+                        <i class="fa-solid fa-moon fa-lg"></i>
+                    </button>
+                    <button class="rtl-toggle-btn d-none d-lg-flex btn btn-outline-secondary rounded-circle align-items-center justify-content-center p-0" title="Toggle RTL" style="width: 36px; height: 36px; border-color: var(--border-color); color: var(--text-main);">
+                        <i class="fa-solid fa-arrow-right-arrow-left fa-lg"></i>
+                    </button>
+                    
+                    <img src="assets/images/team1.jpg" alt="User Profile" class="d-none d-lg-block rounded-circle topbar-profile" width="40" height="40" style="object-fit: cover;">
+                    
+                    <button class="btn btn-link text-dark d-lg-none p-0 ms-2" id="mobileMenuToggle">
+                        <i class="fa-solid fa-bars fa-xl"></i>
+                    </button>
+                </div>
+            </header>
+
+            <div class="tab-content" id="v-pills-tabContent">
+                
+                    <!-- BOOKING TAB -->
+                    <div class="tab-pane fade" id="v-pills-booking" role="tabpanel" aria-labelledby="v-pills-booking-tab">
+                        <h2 class="h3 fw-bold mb-4">Book a New Service</h2>
+                        <div class="premium-card text-center py-5">
+                            <i class="fa-solid fa-calendar-plus fa-3x text-primary mb-3"></i>
+                            <h4 class="fw-bold">Ready to book?</h4>
+                            <p class="text-muted mb-4">Schedule your next maintenance or repair service easily.</p>
+                            <a href="booking.html" class="btn btn-primary px-4">Go to Booking Page</a>
+                        </div>
+                    </div>
+                    
+                    <!-- OVERVIEW TAB -->
+                    <div class="tab-pane fade show active" id="v-pills-overview" role="tabpanel" aria-labelledby="v-pills-overview-tab">
+                        <h2 class="h3 fw-bold mb-4">Welcome Back, John</h2>
+                        
+                        <div class="row g-4 mb-5">
+                            <div class="col-md-6 col-xl-3">
+                                <div class="premium-card p-4">
+                                    <div class="d-flex justify-content-between align-items-center mb-3">
+                                        <h3 class="h6 text-muted mb-0">Next Service</h3>
+                                    </div>
+                                    <h4 class="h3 fw-bold mb-1">Oct 15</h4>
+                                    <p class="text-muted small mb-0">Scheduled Maintenance</p>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-xl-3">
+                                <div class="premium-card p-4">
+                                    <div class="d-flex justify-content-between align-items-center mb-3">
+                                        <h3 class="h6 text-muted mb-0">AMC Status</h3>
+                                    </div>
+                                    <h4 class="h3 fw-bold mb-1 text-success">Active</h4>
+                                    <p class="text-muted small mb-0">Complete Care Plan</p>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-xl-3">
+                                <div class="premium-card p-4">
+                                    <div class="d-flex justify-content-between align-items-center mb-3">
+                                        <h3 class="h6 text-muted mb-0">Active Technician</h3>
+                                    </div>
+                                    <h4 class="h3 fw-bold mb-1">Assigned</h4>
+                                    <p class="text-muted small mb-0">Arriving today, 2:00 PM</p>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-xl-3">
+                                <div class="premium-card p-4">
+                                    <div class="d-flex justify-content-between align-items-center mb-3">
+                                        <h3 class="h6 text-muted mb-0">Total Services</h3>
+                                    </div>
+                                    <h4 class="h3 fw-bold mb-1">8</h4>
+                                    <p class="text-muted small mb-0">Completed since 2024</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row g-4">
+                            <!-- Active Service Overview -->
+                            <div class="col-lg-8">
+                                <div class="premium-card h-100 p-0 overflow-hidden">
+                                    <div class="border-bottom p-4 bg-light d-flex justify-content-between align-items-center">
+                                        <h3 class="h5 fw-bold mb-0">Current Active Service</h3>
+                                        <span class="badge bg-primary rounded-pill px-3 py-2">ID: SRV-8492</span>
+                                    </div>
+                                    <div class="p-4 p-md-5">
+                                        <div class="row align-items-center mb-4">
+                                            <div class="col-md-6">
+                                                <h4 class="fw-bold mb-1">AC Repair</h4>
+                                                <p class="text-muted mb-0">Split AC - Living Room</p>
+                                            </div>
+                                            <div class="col-md-6 text-md-end mt-3 mt-md-0">
+                                                <p class="fw-bold mb-0">Scheduled for Today</p>
+                                                <p class="text-muted mb-0">Between 1:00 PM - 3:00 PM</p>
+                                            </div>
+                                        </div>
+                                        
+                                        <!-- Tracker -->
+                                        <div class="service-tracker d-none d-md-flex">
+                                            <div class="tracker-step active">
+                                                <div class="tracker-icon"><i class="fa-solid fa-clipboard-check"></i></div>
+                                                <div class="tracker-label">Booked</div>
+                                            </div>
+                                            <div class="tracker-step active current">
+                                                <div class="tracker-icon"><i class="fa-solid fa-user-check"></i></div>
+                                                <div class="tracker-label">Assigned</div>
+                                            </div>
+                                            <div class="tracker-step">
+                                                <div class="tracker-icon"><i class="fa-solid fa-truck"></i></div>
+                                                <div class="tracker-label">On The Way</div>
+                                            </div>
+                                            <div class="tracker-step">
+                                                <div class="tracker-icon"><i class="fa-solid fa-screwdriver-wrench"></i></div>
+                                                <div class="tracker-label">In Service</div>
+                                            </div>
+                                            <div class="tracker-step">
+                                                <div class="tracker-icon"><i class="fa-solid fa-check-double"></i></div>
+                                                <div class="tracker-label">Completed</div>
+                                            </div>
+                                        </div>
+                                        
+                                        <!-- Technician Info -->
+                                        <div class="mt-5 p-4 border rounded-3 bg-light d-flex align-items-center">
+                                            <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&q=80&w=150" alt="Technician" width="60" height="60" class="rounded-circle me-4 object-fit-cover shadow-sm">
+                                            <div>
+                                                <h5 class="fw-bold mb-1">Michael T.</h5>
+                                                <p class="text-muted small mb-0">Senior HVAC Technician • <i class="fa-solid fa-star text-warning"></i> 4.9</p>
+                                            </div>
+                                            <a href="#" class="btn btn-outline btn-sm ms-auto"><i class="fa-solid fa-phone me-2"></i>Contact</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- OTHER TABS -->
+                    <div class="tab-pane fade" id="v-pills-active" role="tabpanel" aria-labelledby="v-pills-active-tab">
+                        <h2 class="h3 fw-bold mb-4">Active Service</h2>
+                        <div class="premium-card p-4">
+                            <div class="table-responsive">
+                                <table class="table table-hover align-middle">
+                                    <thead class="table-light">
+                                        <tr>
+                                            <th>Service ID</th>
+                                            <th>Type</th>
+                                            <th>Status</th>
+                                            <th>Date</th>
+                                            <th>Action</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>#SRV-8492</td>
+                                            <td>AC Repair</td>
+                                            <td><span class="badge bg-warning text-dark">Assigned</span></td>
+                                            <td>Today, 1:00 PM</td>
+                                            <td><button class="btn btn-sm btn-outline-primary">Track</button></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="tab-pane fade" id="v-pills-amc" role="tabpanel" aria-labelledby="v-pills-amc-tab">
+                        <h2 class="h3 fw-bold mb-4">AMC Plan Details</h2>
+                        <div class="premium-card p-4">
+                            <div class="row align-items-center">
+                                <div class="col-md-8">
+                                    <h4 class="fw-bold text-success mb-2">Premium Care Plan</h4>
+                                    <p class="text-muted mb-2">Valid until: Oct 2025</p>
+                                    <ul class="list-unstyled mb-0">
+                                        <li><i class="fa-solid fa-check text-success me-2"></i>4 Free Servicing</li>
+                                        <li><i class="fa-solid fa-check text-success me-2"></i>Free Gas Top-up</li>
+                                        <li><i class="fa-solid fa-check text-success me-2"></i>Priority Support</li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-4 text-md-end mt-3 mt-md-0">
+                                    <button class="btn btn-primary">Renew Plan</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="tab-pane fade" id="v-pills-history" role="tabpanel" aria-labelledby="v-pills-history-tab">
+                        <h2 class="h3 fw-bold mb-4">Service History</h2>
+                        <div class="premium-card p-4">
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item px-0 py-3 d-flex justify-content-between align-items-center bg-transparent">
+                                    <div>
+                                        <h6 class="fw-bold mb-1">General Maintenance</h6>
+                                        <p class="text-muted small mb-0">Completed on Aug 10, 2023</p>
+                                    </div>
+                                    <span class="text-success"><i class="fa-solid fa-circle-check fa-lg"></i></span>
+                                </li>
+                                <li class="list-group-item px-0 py-3 d-flex justify-content-between align-items-center bg-transparent">
+                                    <div>
+                                        <h6 class="fw-bold mb-1">Gas Refill</h6>
+                                        <p class="text-muted small mb-0">Completed on May 22, 2023</p>
+                                    </div>
+                                    <span class="text-success"><i class="fa-solid fa-circle-check fa-lg"></i></span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="tab-pane fade" id="v-pills-invoices" role="tabpanel" aria-labelledby="v-pills-invoices-tab">
+                        <h2 class="h3 fw-bold mb-4">Invoices</h2>
+                        <div class="premium-card p-0 overflow-hidden table-responsive">
+                            <table class="table mb-0 align-middle">
+                                <thead class="table-light">
+                                    <tr>
+                                        <th class="ps-4">Invoice #</th>
+                                        <th>Date</th>
+                                        <th>Amount</th>
+                                        <th class="text-end pe-4">Action</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="ps-4 fw-medium">INV-2023-08</td>
+                                        <td>Aug 10, 2023</td>
+                                        <td>$45.00</td>
+                                        <td class="text-end pe-4"><button class="btn btn-link btn-sm text-primary p-0"><i class="fa-solid fa-download"></i></button></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="ps-4 fw-medium">INV-2023-05</td>
+                                        <td>May 22, 2023</td>
+                                        <td>$120.00</td>
+                                        <td class="text-end pe-4"><button class="btn btn-link btn-sm text-primary p-0"><i class="fa-solid fa-download"></i></button></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    
+                    <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
+                        <h2 class="h3 fw-bold mb-4">User Profile</h2>
+                        <div class="premium-card p-4">
+                            <form>
+                                <div class="row g-3">
+                                    <div class="col-md-6">
+                                        <label class="form-label small text-muted">First Name</label>
+                                        <input type="text" class="form-control" value="John">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label class="form-label small text-muted">Last Name</label>
+                                        <input type="text" class="form-control" value="Doe">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label class="form-label small text-muted">Email</label>
+                                        <input type="email" class="form-control" value="john.doe@example.com">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label class="form-label small text-muted">Phone</label>
+                                        <input type="tel" class="form-control" value="+1 (555) 123-4567">
+                                    </div>
+                                    <div class="col-12 mt-4">
+                                        <button type="button" class="btn btn-primary px-4">Save Changes</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div> <!-- End tab-content -->
+            </div>
+        </main>
+    </div>
+
+    <!-- Bootstrap 5 JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/dashboard.js"></script>
+</body>
+</html>

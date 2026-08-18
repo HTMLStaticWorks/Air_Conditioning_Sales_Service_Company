@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book AC Service | AirCare</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/dark-mode.css">
+    <link rel="stylesheet" href="css/rtl.css">
+
+    <link rel="icon" type="image/svg+xml"
+        href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'%3E%3Cpath fill='%23176B87' d='M288 32c0-17.7-14.3-32-32-32s-32 14.3-32 32V256c0 17.7 14.3 32 32 32s32-14.3 32-32V32zM143.5 120.5c13.6-13.6 13.6-35.8 0-49.4s-35.8-13.6-49.4 0L120.5 143.5c-13.6 13.6-13.6 35.8 0 49.4s35.8 13.6 49.4 0l-26.4-26.4zM32 288c-17.7 0-32-14.3-32-32s14.3-32 32-32H256c17.7 0 32 14.3 32 32s-14.3 32-32 32H32zM120.5 391.5c-13.6 13.6-13.6 35.8 0 49.4s35.8 13.6 49.4 0l26.4-26.4c13.6-13.6 13.6-35.8 0-49.4s-35.8-13.6-49.4 0L120.5 391.5zM224 480c0 17.7 14.3 32 32 32s32-14.3 32-32V256c0-17.7-14.3-32-32-32s-32 14.3-32 32v224zM368.5 391.5c-13.6 13.6-13.6 35.8 0 49.4s35.8 13.6 49.4 0l26.4-26.4c13.6-13.6 13.6-35.8 0-49.4s-35.8-13.6-49.4 0l-26.4 26.4zM480 224c17.7 0 32 14.3 32 32s-14.3 32-32 32H256c-17.7 0-32-14.3-32-32s14.3-32 32-32h224zM391.5 120.5c13.6-13.6 13.6-35.8 0-49.4s-35.8-13.6-49.4 0l-26.4 26.4c-13.6 13.6-13.6 35.8 0 49.4s35.8 13.6 49.4 0l26.4-26.4z'/%3E%3C/svg%3E">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-xl navbar-floating mt-3">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">
+                <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'%3E%3Cpath fill='%23176B87' d='M288 32c0-17.7-14.3-32-32-32s-32 14.3-32 32V256c0 17.7 14.3 32 32 32s32-14.3 32-32V32zM143.5 120.5c13.6-13.6 13.6-35.8 0-49.4s-35.8-13.6-49.4 0L120.5 143.5c-13.6 13.6-13.6 35.8 0 49.4s35.8 13.6 49.4 0l-26.4-26.4zM32 288c-17.7 0-32-14.3-32-32s14.3-32 32-32H256c17.7 0 32 14.3 32 32s-14.3 32-32 32H32zM120.5 391.5c-13.6 13.6-13.6 35.8 0 49.4s35.8 13.6 49.4 0l26.4-26.4c13.6-13.6 13.6-35.8 0-49.4s-35.8-13.6-49.4 0L120.5 391.5zM224 480c0 17.7 14.3 32 32 32s32-14.3 32-32V256c0-17.7-14.3-32-32-32s-32 14.3-32 32v224zM368.5 391.5c-13.6 13.6-13.6 35.8 0 49.4s35.8 13.6 49.4 0l26.4-26.4c13.6-13.6 13.6-35.8 0-49.4s-35.8-13.6-49.4 0l-26.4 26.4zM480 224c17.7 0 32 14.3 32 32s-14.3 32-32 32H256c-17.7 0-32-14.3-32-32s14.3-32 32-32h224zM391.5 120.5c13.6-13.6 13.6-35.8 0-49.4s-35.8-13.6-49.4 0l-26.4 26.4c-13.6 13.6-13.6 35.8 0 49.4s35.8 13.6 49.4 0l26.4-26.4z'/%3E%3C/svg%3E"
+                    alt="Logo" width="28" height="28" class="logo-spin">
+                AirCare
+            </a>
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="homeDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">Home</a>
+                        <ul class="dropdown-menu" aria-labelledby="homeDropdown">
+                            <li><a class="dropdown-item" href="index.html">Home 1</a></li>
+                            <li><a class="dropdown-item" href="home-2.html">Home 2</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="products.html">AC Products</a></li>
+                    <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="amc.html">AMC Plans</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link" href="dashboard.html">Dashboard</a></li>
+                </ul>
+                <div class="d-flex align-items-center gap-3">
+                    <button id="theme-toggle-btn"
+                        class="btn btn-outline-secondary rounded-circle d-flex align-items-center justify-content-center p-0"
+                        title="Toggle Dark Mode"
+                        style="width: 36px; height: 36px; border-color: var(--border-color); color: var(--text-main);">
+                        <i class="fa-solid fa-moon fa-lg"></i>
+                    </button>
+                    <button id="rtl-toggle-btn"
+                        class="btn btn-outline-secondary rounded-circle d-flex align-items-center justify-content-center p-0"
+                        title="Toggle RTL"
+                        style="width: 36px; height: 36px; border-color: var(--border-color); color: var(--text-main);">
+                        <i class="fa-solid fa-arrow-right-arrow-left fa-lg"></i>
+                    </button>
+                    <a href="login.html" class="btn btn-primary btn-sm ms-2 me-2">Login</a>
+                    <a href="booking.html" class="btn btn-primary btn-sm">Book Service</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <!-- SECTION 01 — HERO -->
+        <section class="section-padding hero-bg-img"
+            style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('assets/images/booking-hero.jpg'); background-size: cover; background-position: center; min-height: 80vh; display: flex; align-items: center;">
+            <div class="container mt-5 pt-5 text-center">
+                <h1 class="fw-bold display-4">Book AC Service</h1>
+                <p class="text-white-50 lead">Schedule your professional service in a few simple steps.</p>
+            </div>
+        </section>
+
+        <!-- SECTION 02 — BOOKING FORM -->
+        <section class="section-padding bg-light">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <div class="booking-container">
+                            <form id="booking-form">
+                                <div class="booking-header">
+                                    <h3 class="h4 mb-4 text-center fw-bold text-white">Service Booking</h3>
+                                    <!-- Progress Indicator -->
+                                    <div class="step-progress">
+                                        <div class="step-progress-line"></div>
+                                        <div class="step-indicator active" id="indicator-1">1</div>
+                                        <div class="step-indicator" id="indicator-2">2</div>
+                                        <div class="step-indicator" id="indicator-3">3</div>
+                                        <div class="step-indicator" id="indicator-4">4</div>
+                                    </div>
+                                </div>
+
+                                <div class="booking-body">
+                                    <!-- Step 1: Service -->
+                                    <div class="booking-step" id="step-1">
+                                        <h3 class="h5 fw-bold mb-4">Step 1: Choose Service</h3>
+                                        <div class="row g-3">
+                                            <div class="col-md-6">
+                                                <div
+                                                    class="form-check custom-radio-card p-4 border rounded-3 text-center transition-all h-100">
+                                                    <input class="form-check-input visually-hidden" type="radio"
+                                                        name="service" id="srv-repair" value="repair" checked>
+                                                    <label
+                                                        class="form-check-label w-100 stretched-link cursor-pointer d-flex flex-column align-items-center justify-content-center h-100"
+                                                        for="srv-repair">
+                                                        <i
+                                                            class="fa-solid fa-screwdriver-wrench fa-3x mb-3 text-secondary"></i>
+                                                        <h4 class="h6 mb-0 fw-bold">Repair & Service</h4>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div
+                                                    class="form-check custom-radio-card p-4 border rounded-3 text-center transition-all h-100">
+                                                    <input class="form-check-input visually-hidden" type="radio"
+                                                        name="service" id="srv-amc" value="amc">
+                                                    <label
+                                                        class="form-check-label w-100 stretched-link cursor-pointer d-flex flex-column align-items-center justify-content-center h-100"
+                                                        for="srv-amc">
+                                                        <i
+                                                            class="fa-solid fa-file-contract fa-3x mb-3 text-secondary"></i>
+                                                        <h4 class="h6 mb-0 fw-bold">AMC Renewal</h4>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Step 2: AC Type -->
+                                    <div class="booking-step d-none" id="step-2">
+                                        <h3 class="h5 fw-bold mb-4">Step 2: AC Type</h3>
+                                        <select
+                                            class="form-select form-select-lg mb-4 rounded-3 shadow-sm border-light">
+                                            <option value="split">Split AC</option>
+                                            <option value="window">Window AC</option>
+                                            <option value="inverter">Inverter AC</option>
+                                            <option value="cassette">Cassette AC</option>
+                                            <option value="ducted">Ducted AC</option>
+                                        </select>
+                                    </div>
+
+                                    <!-- Step 3: Date & Time -->
+                                    <div class="booking-step d-none" id="step-3">
+                                        <h3 class="h5 fw-bold mb-4">Step 3: Schedule</h3>
+                                        <div class="row g-4">
+                                            <div class="col-md-6">
+                                                <label class="form-label fw-semibold text-secondary">Preferred
+                                                    Date</label>
+                                                <input type="date"
+                                                    class="form-control form-control-lg rounded-3 shadow-sm border-light"
+                                                    required>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <label class="form-label fw-semibold text-secondary">Preferred
+                                                    Time</label>
+                                                <select
+                                                    class="form-select form-select-lg rounded-3 shadow-sm border-light">
+                                                    <option>Morning (9 AM - 12 PM)</option>
+                                                    <option>Afternoon (1 PM - 4 PM)</option>
+                                                    <option>Evening (5 PM - 8 PM)</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Step 4: Details -->
+                                    <div class="booking-step d-none" id="step-4">
+                                        <h3 class="h5 fw-bold mb-4">Step 4: Your Details</h3>
+                                        <div class="row g-4">
+                                            <div class="col-md-6">
+                                                <label class="form-label fw-semibold text-secondary">Full Name</label>
+                                                <input type="text"
+                                                    class="form-control form-control-lg rounded-3 shadow-sm border-light"
+                                                    placeholder="John Doe" required>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <label class="form-label fw-semibold text-secondary">Phone
+                                                    Number</label>
+                                                <input type="tel"
+                                                    class="form-control form-control-lg rounded-3 shadow-sm border-light"
+                                                    placeholder="+1 234 567 890" required>
+                                            </div>
+                                            <div class="col-12">
+                                                <label class="form-label fw-semibold text-secondary">Service
+                                                    Address</label>
+                                                <textarea
+                                                    class="form-control form-control-lg rounded-3 shadow-sm border-light"
+                                                    rows="3" placeholder="Enter your full address here..."
+                                                    required></textarea>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="booking-footer">
+                                    <button type="button"
+                                        class="btn btn-outline-secondary px-4 py-2 rounded-pill fw-bold" id="btn-back"
+                                        style="visibility: hidden;"><i class="fa-solid fa-arrow-left me-2"></i>
+                                        Back</button>
+                                    <div>
+                                        <button type="button" class="btn btn-primary px-4 py-2 rounded-pill fw-bold"
+                                            id="btn-next">Next <i class="fa-solid fa-arrow-right ms-2"></i></button>
+                                        <button type="submit" class="btn btn-primary px-4 py-2 rounded-pill fw-bold"
+                                            id="btn-submit" style="display: none;">Confirm Booking <i
+                                                class="fa-solid fa-check ms-2"></i></button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer pt-5 pb-4">
+        <div class="container pt-4">
+            <div class="row g-4">
+                <div class="col-lg-4 pe-lg-5">
+                    <a href="index.html"
+                        class="text-decoration-none d-flex align-items-center gap-2 h4 mb-4 footer-title">
+                        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'%3E%3Cpath fill='%23176B87' d='M288 32c0-17.7-14.3-32-32-32s-32 14.3-32 32V256c0 17.7 14.3 32 32 32s32-14.3 32-32V32zM143.5 120.5c13.6-13.6 13.6-35.8 0-49.4s-35.8-13.6-49.4 0L120.5 143.5c-13.6 13.6-13.6 35.8 0 49.4s35.8 13.6 49.4 0l-26.4-26.4zM32 288c-17.7 0-32-14.3-32-32s14.3-32 32-32H256c17.7 0 32 14.3 32 32s-14.3 32-32 32H32zM120.5 391.5c-13.6 13.6-13.6 35.8 0 49.4s35.8 13.6 49.4 0l26.4-26.4c13.6-13.6 13.6-35.8 0-49.4s-35.8-13.6-49.4 0L120.5 391.5zM224 480c0 17.7 14.3 32 32 32s32-14.3 32-32V256c0-17.7-14.3-32-32-32s-32 14.3-32 32v224zM368.5 391.5c-13.6 13.6-13.6 35.8 0 49.4s35.8 13.6 49.4 0l26.4-26.4c13.6-13.6 13.6-35.8 0-49.4s-35.8-13.6-49.4 0l-26.4 26.4zM480 224c17.7 0 32 14.3 32 32s-14.3 32-32 32H256c-17.7 0-32-14.3-32-32s14.3-32 32-32h224zM391.5 120.5c13.6-13.6 13.6-35.8 0-49.4s-35.8-13.6-49.4 0l-26.4 26.4c-13.6 13.6-13.6 35.8 0 49.4s35.8 13.6 49.4 0l26.4-26.4z'/%3E%3C/svg%3E"
+                            alt="Logo" width="28" height="28" class="logo-spin"> AirCare
+                    </a>
+                    <p class="text-secondary small mb-4">Premium air-conditioning solutions, professional installation
+                        and dependable maintenance for homes and businesses.</p>
+                    <div class="d-flex gap-3">
+                        <a href="#" class="footer-link"><i class="fa-brands fa-facebook fa-lg"></i></a>
+                        <a href="#" class="footer-link"><i class="fa-brands fa-instagram fa-lg"></i></a>
+                        <a href="#" class="footer-link"><i class="fa-brands fa-twitter fa-lg"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6">
+                    <h5 class="mb-4 h6 fw-bold footer-title">Company</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="about.html" class="footer-link text-decoration-none">About Us</a></li>
+                        <li class="mb-2"><a href="services.html" class="footer-link text-decoration-none">Services</a>
+                        </li>
+                        <li class="mb-2"><a href="projects.html" class="footer-link text-decoration-none">Projects</a>
+                        </li>
+                        <li class="mb-2"><a href="contact.html" class="footer-link text-decoration-none">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-6">
+                    <h5 class="mb-4 h6 fw-bold footer-title">Services</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="service-details.html" class="footer-link text-decoration-none">AC
+                                Installation</a></li>
+                        <li class="mb-2"><a href="service-details.html" class="footer-link text-decoration-none">AC
+                                Repair</a></li>
+                        <li class="mb-2"><a href="amc.html" class="footer-link text-decoration-none">AMC Plans</a></li>
+                        <li class="mb-2"><a href="pricing.html" class="footer-link text-decoration-none">Pricing</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-4">
+                    <h5 class="mb-4 h6 fw-bold footer-title">Newsletter</h5>
+                    <p class="text-secondary small mb-4">Subscribe for maintenance tips and exclusive offers.</p>
+                    <form class="d-flex">
+                        <input type="email" class="form-control rounded-start-2 rounded-end-0 border"
+                            placeholder="Email Address" aria-label="Email Address">
+                        <button class="btn btn-secondary rounded-start-0 rounded-end-2 px-4"
+                            type="button">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <hr class="mt-5 mb-4">
+            <div class="row align-items-center">
+                <div class="col-md-6 text-center text-md-start">
+                    <p class="text-secondary small mb-0">&copy; 2026 AirCare. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end mt-3 mt-md-0">
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <button id="scrollTopBtn" title="Go to top">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+    <!-- Bootstrap 5 JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="js/main.js"></script>
+    <script src="js/booking.js"></script>
+</body>
+
+</html>
