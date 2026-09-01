@@ -161,6 +161,26 @@
     }
 }
 
+@media (max-width: 767.98px) {
+    .service-tracker {
+        flex-direction: column;
+        gap: 20px;
+    }
+    .service-tracker::before {
+        display: none;
+    }
+    .tracker-step {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        text-align: left;
+        gap: 15px;
+    }
+    .tracker-icon {
+        margin: 0 !important;
+    }
+}
+
 @keyframes slideDown {
     from {
         opacity: 0;
